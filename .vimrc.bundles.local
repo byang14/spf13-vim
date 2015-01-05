@@ -1,3 +1,4 @@
 Bundle 'airblade/vim-rooter'
 "Bundle 'docteurklein/vim-symfony'
 Bundle 'vim-scripts/gitignore'
+Bundle 'rking/ag.vim'
