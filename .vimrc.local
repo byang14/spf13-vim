@@ -29,23 +29,10 @@ map <Leader>c :cope<cr>
 " Delete buffer
 map <Leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
  
-" Seach with Ag
+" Seach with Silver Searcher https://github.com/ggreer/the_silver_searcher
+" sudo apt-get install silversearcher-ag
+" brew install the_silver_searcher
 map <Leader>s :Ag<Space>
  
 " load file using CtrlP
 map <Leader>l :CtrlP<cr>
- 
-" Disable unneeded bundles
-UnBundle 'tpope/vim-rails'
-UnBundle 'wting/rust.vim'
-UnBundle 'cespare/vim-toml'
-UnBundle 'saltstack/salt-vim'
-UnBundle 'rodjek/vim-puppet'
-UnBundle 'klen/python-mode'
-UnBundle 'yssource/python.vim'
-UnBundle 'python_match.vim'
-UnBundle 'pythoncomplete'
-UnBundle 'tpope/vim-cucumber'
-UnBundle 'quentindecock/vim-cucumber-align-pipes'
-UnBundle 'bling/vim-bufferline'
-UnBundle 'majutsushi/tagbar'
