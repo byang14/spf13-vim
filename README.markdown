@@ -1,3 +1,31 @@
+```
+# INSTALL ESSENTIALS
+sudo apt-get install build-essential cmake
+sudo apt-get install python-dev
+
+# INSTALL SILVER SEARCHER
+sudo apt-get install silversearcher-ag
+# brew install the_silver_searcher
+
+# INSTALL VIM
+git clone git@github.com:jancarloviray/spf13-vim.git
+sudo sh ~/spf13-vim/bootstrap.sh
+sudo vim +BundleInstall! +BundleClean +q
+
+# MAC VIM FIX
+# brew install mercurial
+# brew install vim
+
+# export PATH=/usr/local/bin:/usr/local/go/bin:$PATH
+# And after restarting the terminal homebrew's vim should be the default. 
+# If not, you should update your $PATH so that /usr/local/bin is before /usr/bin. 
+# E.g. add the following to your .profile: export PATH=/usr/local/bin:$PATH
+
+# TMUX
+# fix for mac
+# brew unlink libevent && brew link libevent
+```
+
 # spf13-vim : Steve Francia's Vim Distribution
 
                     __ _ _____              _
