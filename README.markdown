@@ -24,6 +24,16 @@ sudo vim +BundleInstall! +BundleClean +q
 # TMUX
 # fix for mac
 # brew unlink libevent && brew link libevent
+cp ~/spf13-vim/tmux/.tmux.conf ~/
+tmux source-file ~/.tmux
+
+# FONTS 
+# install fonts for vim-airline (then choose in terminal preference)
+sudo sh ~/spf13-vim/fonts/install.sh
+
+# NOTES: TMUX
+# <c-b><c-s> save session
+# <c-b><c-r> reload session
 ```
 
 # spf13-vim : Steve Francia's Vim Distribution
