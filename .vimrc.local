@@ -36,3 +36,8 @@ map <Leader>s :Ag<Space>
  
 " load file using CtrlP
 map <Leader>l :CtrlP<cr>
+
+" show buffers or tabs
+let g:airline#extensions#tabline#enabled = 1
+" use powerline fonts
+let g:airline_powerline_fonts = 1
