@@ -12,7 +12,7 @@ git clone git@github.com:jancarloviray/spf13-vim.git
 sudo sh ~/spf13-vim/bootstrap.sh
 sudo vim +BundleInstall! +BundleClean +q
 
-# MAC VIM FIX
+## MAC VIM FIX
 # brew install mercurial
 # brew install vim
 
@@ -22,13 +22,16 @@ sudo vim +BundleInstall! +BundleClean +q
 # E.g. add the following to your .profile: export PATH=/usr/local/bin:$PATH
 
 # TMUX
-# fix for mac
+
+## fix for mac
 # brew unlink libevent && brew link libevent
+# brew install reattach-to-user-namespace
+
 cp ~/spf13-vim/tmux/.tmux.conf ~/
 tmux source-file ~/.tmux
 
 # FONTS 
-# install fonts for vim-airline (then choose in terminal preference)
+## install fonts for vim-airline (then choose in terminal preference)
 sudo sh ~/spf13-vim/fonts/install.sh
 
 # NOTES: TMUX

@@ -1,3 +1,8 @@
+" http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
+
 " map leader key to space
 let mapleader=" "
 
