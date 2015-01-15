@@ -13,17 +13,21 @@ sudo sh ~/spf13-vim/bootstrap.sh
 sudo vim +BundleInstall! +BundleClean +q
 
 ## MAC VIM FIX
+# brew update
 # brew install mercurial
 # brew install vim
+## or
+# brew install vim --with-lua --force
 
+## IMPORTANT (osx)!
 # export PATH=/usr/local/bin:/usr/local/go/bin:$PATH
-# And after restarting the terminal homebrew's vim should be the default. 
-# If not, you should update your $PATH so that /usr/local/bin is before /usr/bin. 
-# E.g. add the following to your .profile: export PATH=/usr/local/bin:$PATH
+## And after restarting the terminal homebrew's vim should be the default. 
+## If not, you should update your $PATH so that /usr/local/bin is before /usr/bin. 
+## E.g. add the following to your .profile: export PATH=/usr/local/bin:$PATH
 
 # TMUX
 
-## fix for mac
+## fix for mac osx only
 # brew unlink libevent && brew link libevent
 # brew install reattach-to-user-namespace
 
