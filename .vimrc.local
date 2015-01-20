@@ -7,10 +7,10 @@ endif
 let mapleader=" "
 
 " Execute php script using ctrl-m
-:autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
+" :autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 
 " Exit insert mode shortcut
-:imap hh <Esc>
+" :imap hh <Esc>
 
 " Disable cursorline as it slows vim considerably
 :set cursorline
@@ -50,7 +50,7 @@ let g:airline_powerline_fonts = 1
 " disable autocomlpop
 let g:acp_enableAtStartup = 0
 " use neocomplete
-let g:neocomplete#enable_at_startup = 0
+let g:neocomplete#enable_at_startup = 1
 " Use smartcase
 let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword lengt
@@ -59,4 +59,4 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
+" inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
