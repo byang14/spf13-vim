@@ -19,8 +19,8 @@ let mapleader=" "
 set nofoldenable
  
 " NERDTree
-map <Leader>nn :NERDTreeToggle<cr>
-map <Leader>nf :NERDTreeFind<cr>
+" map <Leader>nn :NERDTreeToggle<cr>
+" map <Leader>nf :NERDTreeFind<cr>
  
 " CTRL-P
 map <Leader>b :CtrlPBuffer<cr>
@@ -29,7 +29,7 @@ map <Leader>b :CtrlPBuffer<cr>
 map <Leader>w :w<cr>
  
 " Navigate to quickfix window
-map <Leader>c :cope<cr>
+" map <Leader>c :cope<cr>
  
 " Delete buffer
 map <Leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
@@ -56,7 +56,7 @@ let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword lengt
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 " <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Close popup by <Space>.
 " inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
