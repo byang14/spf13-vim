@@ -2,6 +2,9 @@
 set encoding=utf-8
 set fileencodings=utf-8
 
+" https://github.com/maksimr/vim-jsbeautify
+map <c-f> :call JsBeautify()<cr>
+
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
 if $TMUX == ''
     set clipboard+=unnamed
