@@ -4,11 +4,7 @@
 
 ```bash
 # essentials
-sudo apt-get install -y build-essential cmake python-dev
-
-# silver searcher
-sudo apt-get install silversearcher-ag
-# brew install the_silver_searcher
+sudo apt-get install -y build-essential cmake python-dev silversearcher-ag
 
 # vim
 git clone https://github.com/jancarloviray/spf13-vim.git
@@ -21,14 +17,10 @@ sudo sh cd ~/.spf13-vim-3/.vim/bundle/YouCompleteMe/install.sh --clang-completer
 
 # tmux config
 cp ~/spf13-vim/tmux/.tmux.conf ~/
-tmux source-file ~/.tmux
+tmux source-file ~/.tmux.conf
 
 ## install fonts for vim-airline (then choose in terminal preference)
 sudo sh ~/spf13-vim/fonts/install.sh
-
-# NOTES: TMUX
-# <c-b><c-s> save session
-# <c-b><c-r> reload session
 ```
 
 ## OSX
@@ -57,10 +49,18 @@ brew install reattach-to-user-namespace
 
 # tmux config
 cp ~/spf13-vim/tmux/.tmux.conf ~/
-tmux source-file ~/.tmux
+tmux source-file ~/.tmux.conf
 
 # install fonts for vim-airline (then choose in terminal preference)
 sudo sh ~/spf13-vim/fonts/install.sh
+```
+
+## Notes
+
+```
+# tmux
+<c-b><c-s> save session
+<c-b><c-r> reload session
 ```
 
 # spf13-vim : Steve Francia's Vim Distribution
