@@ -1,3 +1,7 @@
+# set right encoding to prevent strange chars
+set encoding=utf-8
+set fileencodings=utf-8
+
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
 if $TMUX == ''
     set clipboard+=unnamed
