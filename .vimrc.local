@@ -21,44 +21,31 @@ let mapleader=" "
 
 " Disable folding
 set nofoldenable
- 
-" NERDTree
-" map <Leader>nn :NERDTreeToggle<cr>
-" map <Leader>nf :NERDTreeFind<cr>
- 
-" CTRL-P
-map <Leader>b :CtrlPBuffer<cr>
- 
+
 " Write buffer
 map <Leader>w :w<cr>
  
 " Navigate to quickfix window
 " map <Leader>c :cope<cr>
- 
-" Delete buffer
-map <Leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
- 
+
 " Seach with Silver Searcher https://github.com/ggreer/the_silver_searcher
 " sudo apt-get install silversearcher-ag
 " brew install the_silver_searcher
 map <Leader>s :Ag<Space>
- 
-" load file using CtrlP
-map <Leader>l :CtrlP<cr>
 
 " show buffers or tabs
 let g:airline#extensions#tabline#enabled = 1
 " use powerline fonts
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " disable autocomlpop
-let g:acp_enableAtStartup = 0
+" let g:acp_enableAtStartup = 0
 " use neocomplete
-let g:neocomplete#enable_at_startup = 1
+" let g:neocomplete#enable_at_startup = 1
 " Use smartcase
-let g:neocomplete#enable_smart_case = 1
+" let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword lengt
-let g:neocomplete#sources#syntax#min_keyword_length = 3
+" let g:neocomplete#sources#syntax#min_keyword_length = 3
 " <TAB>: completion.
 " inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 

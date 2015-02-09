@@ -1,46 +1,66 @@
-```
-# INSTALL ESSENTIALS
-sudo apt-get install build-essential cmake
-sudo apt-get install python-dev
+# Quick Install
 
-# INSTALL SILVER SEARCHER
+## UBUNTU/DEBIAN
+
+```bash
+# essentials
+sudo apt-get install -y build-essential cmake python-dev
+
+# silver searcher
 sudo apt-get install silversearcher-ag
 # brew install the_silver_searcher
 
-# INSTALL VIM
-git clone git@github.com:jancarloviray/spf13-vim.git
+# vim
+git clone https://github.com/jancarloviray/spf13-vim.git
 sudo sh ~/spf13-vim/bootstrap.sh
+sudo cp ~/spf13-vim/.vimrc.local ~/ && cp ~/spf13-vim/.vimrc.bundles.local ~/
 sudo vim +BundleInstall! +BundleClean +q
 
-## MAC VIM FIX
-# brew update
-# brew install mercurial
-# brew install vim
-## or
-# brew install vim --with-lua --force
+# youcompleteme
+sudo sh cd ~/.spf13-vim-3/.vim/bundle/YouCompleteMe/install.sh --clang-completer
 
-## IMPORTANT (osx)!
-# export PATH=/usr/local/bin:/usr/local/go/bin:$PATH
-## And after restarting the terminal homebrew's vim should be the default. 
-## If not, you should update your $PATH so that /usr/local/bin is before /usr/bin. 
-## E.g. add the following to your .profile: export PATH=/usr/local/bin:$PATH
-
-# TMUX
-
-## fix for mac osx only
-# brew unlink libevent && brew link libevent
-# brew install reattach-to-user-namespace
-
+# tmux config
 cp ~/spf13-vim/tmux/.tmux.conf ~/
 tmux source-file ~/.tmux
 
-# FONTS 
 ## install fonts for vim-airline (then choose in terminal preference)
 sudo sh ~/spf13-vim/fonts/install.sh
 
 # NOTES: TMUX
 # <c-b><c-s> save session
 # <c-b><c-r> reload session
+```
+
+## OSX
+
+```bash
+# silver searcher
+brew install the_silver_searcher
+
+# vim
+git clone https://github.com/jancarloviray/spf13-vim.git
+sudo sh ~/spf13-vim/bootstrap.sh
+sudo cp ~/spf13-vim/.vimrc.local ~/ && cp ~/spf13-vim/.vimrc.bundles.local ~/
+sudo vim +BundleInstall! +BundleClean +q
+
+# mac vim fix
+brew install vim --with-lua --force
+
+# after restarting the terminal homebrew's vim should be the default. 
+# If not, you should update your $PATH so that /usr/local/bin is before /usr/bin. 
+# E.g. add the following to your .profile: export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/go/bin:$PATH
+
+# tmux mac fix
+brew unlink libevent && brew link libevent
+brew install reattach-to-user-namespace
+
+# tmux config
+cp ~/spf13-vim/tmux/.tmux.conf ~/
+tmux source-file ~/.tmux
+
+# install fonts for vim-airline (then choose in terminal preference)
+sudo sh ~/spf13-vim/fonts/install.sh
 ```
 
 # spf13-vim : Steve Francia's Vim Distribution
