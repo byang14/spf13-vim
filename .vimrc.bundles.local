@@ -1,10 +1,11 @@
 Bundle 'airblade/vim-rooter'
-"Bundle 'docteurklein/vim-symfony'
 Bundle 'vim-scripts/gitignore'
 Bundle 'rking/ag.vim'
-" Bundle 'jancarloviray/golden-ratio'
 Bundle 'mattn/emmet-vim'
 Bundle 'jancarloviray/base16-vim'
+Bundle 'moll/vim-node'
+Bundle 'maksimr/vim-jsbeautify'
+" Bundle 'jancarloviray/golden-ratio'
 
 " Disable unneeded bundles
 UnBundle 'tpope/vim-rails'
