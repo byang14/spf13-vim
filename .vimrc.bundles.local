@@ -1,11 +1,35 @@
+" GOOD PLUGINS FOR PRODUCTIVITY AND FUN
+" -------------------------------------
+
 Bundle 'airblade/vim-rooter'
 Bundle 'vim-scripts/gitignore'
 Bundle 'rking/ag.vim'
 Bundle 'mattn/emmet-vim'
+
+" great colorschemes!
 Bundle 'jancarloviray/base16-vim'
+
 Bundle 'moll/vim-node'
+
+" <c-f> to run jsbeautifier
 Bundle 'maksimr/vim-jsbeautify'
-" Bundle 'jancarloviray/golden-ratio'
+
+" :HackerNews to read hacker news. Use 'o' to open
+" 'u' to go back, '<c-r' to go forward
+Bundle 'ryanss/vim-hackernews'
+
+" incsearch now has highlighting and supports regex!
+Bundle 'haya14busa/incsearch.vim'
+
+" docker syntax highlight
+Bundle 'ekalinin/Dockerfile.vim'
+
+" use + or - to expand/shrink selection by context
+Bundle 'terryma/vim-expand-region'
+
+
+" DISABLE UNNECESSARY PLUGINS
+" ---------------------------
 
 " Disable unneeded bundles
 UnBundle 'tpope/vim-rails'

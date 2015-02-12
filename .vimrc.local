@@ -1,3 +1,22 @@
+" Shortcuts List Reference
+" ------------------------
+" <leader>s     Ag Search
+" <c-p>         CtrlP
+"   <c-j>/<c-k>     move cursor down/up
+"   <c-z>           select file
+"   <c-z>           open in split windows
+"   <c-t>           open in tabs
+" <c-e>         NerdTree
+"   cd              selected folder becomes cwd
+"   CD              open to cwd
+" gS            split one liner to multiple lines
+" gJ            join to one line
+" +, _          expand/shrink visual selection
+" <leader><leader>s     EasyMotion Search
+
+" map leader key to space
+let mapleader=" "
+
 " set right encoding to prevent strange chars
 set encoding=utf-8
 set fileencodings=utf-8
@@ -5,19 +24,15 @@ set fileencodings=utf-8
 " https://github.com/maksimr/vim-jsbeautify
 map <c-f> :call JsBeautify()<cr>
 
+" https://github.com/haya14busa/incsearch.vim
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
 if $TMUX == ''
     set clipboard+=unnamed
 endif
-
-" map leader key to space
-let mapleader=" "
-
-" Execute php script using ctrl-m
-" :autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
-
-" Exit insert mode shortcut
-" :imap hh <Esc>
 
 " Disable cursorline as it slows vim considerably
 :set cursorline
@@ -27,9 +42,6 @@ set nofoldenable
 
 " Write buffer
 map <Leader>w :w<cr>
- 
-" Navigate to quickfix window
-" map <Leader>c :cope<cr>
 
 " Seach with Silver Searcher https://github.com/ggreer/the_silver_searcher
 " sudo apt-get install silversearcher-ag
@@ -38,19 +50,6 @@ map <Leader>s :Ag<Space>
 
 " show buffers or tabs
 let g:airline#extensions#tabline#enabled = 1
+
 " use powerline fonts
 let g:airline_powerline_fonts = 0
-
-" disable autocomlpop
-" let g:acp_enableAtStartup = 0
-" use neocomplete
-" let g:neocomplete#enable_at_startup = 1
-" Use smartcase
-" let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword lengt
-" let g:neocomplete#sources#syntax#min_keyword_length = 3
-" <TAB>: completion.
-" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" Close popup by <Space>.
-" inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
