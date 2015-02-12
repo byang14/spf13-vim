@@ -129,7 +129,7 @@
                 Bundle 'vim-scripts/restore_view.vim'
             endif
             Bundle 'mhinz/vim-signify'
-            Bundle 'tpope/vim-abolish.git'
+            " Bundle 'tpope/vim-abolish.git'
             Bundle 'osyo-manga/vim-over'
             Bundle 'kana/vim-textobj-user'
             Bundle 'kana/vim-textobj-indent'
@@ -139,10 +139,10 @@
 
     " Writing {
         if count(g:spf13_bundle_groups, 'writing')
-            "  Bundle 'reedes/vim-litecorrect'
-            "  Bundle 'reedes/vim-textobj-sentence'
-            "  Bundle 'reedes/vim-textobj-quote'
-            "  Bundle 'reedes/vim-wordy'
+            Bundle 'reedes/vim-litecorrect'
+            Bundle 'reedes/vim-textobj-sentence'
+            Bundle 'reedes/vim-textobj-quote'
+            Bundle 'reedes/vim-wordy'
         endif
     " }
 
