@@ -7,7 +7,7 @@
 sudo apt-get install -y build-essential cmake python-dev silversearcher-ag
 
 # vim
-git clone https://github.com/jancarloviray/spf13-vim.git
+git clone https://github.com/byang14/spf13-vim.git
 sudo sh ~/spf13-vim/bootstrap.sh
 sudo cp ~/spf13-vim/.vimrc.local ~/ && cp ~/spf13-vim/.vimrc.bundles.local ~/
 sudo vim +BundleInstall! +BundleClean +q
@@ -30,7 +30,7 @@ sudo sh ~/spf13-vim/fonts/install.sh
 brew install the_silver_searcher
 
 # vim
-git clone https://github.com/jancarloviray/spf13-vim.git
+git clone https://github.com/byang14/spf13-vim.git
 sudo sh ~/spf13-vim/bootstrap.sh
 sudo cp ~/spf13-vim/.vimrc.local ~/ && cp ~/spf13-vim/.vimrc.bundles.local ~/
 sudo vim +BundleInstall! +BundleClean +q
